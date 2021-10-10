@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
+$(call inherit-product, device/xiaomi/vayu/device-hidl.mk)
 
 # Inherit some common xd stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
