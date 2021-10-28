@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2021 ArrowOS
+# Copyright (C) 2018-2021 Cafex
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,11 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common AOSP configurations
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit common Cafex configurations
+$(call inherit-product, vendor/extended/common.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_vayu
+PRODUCT_NAME := cafex_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
